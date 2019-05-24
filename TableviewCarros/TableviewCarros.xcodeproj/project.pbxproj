@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB90A922297579000A7D915 /* CadastraCarroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB90A912297579000A7D915 /* CadastraCarroVC.swift */; };
+		0BB90A942297699E00A7D915 /* CarroManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB90A932297699E00A7D915 /* CarroManager.swift */; };
 		38FCC3E42294B180002FD443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FCC3E32294B180002FD443 /* AppDelegate.swift */; };
 		38FCC3E62294B180002FD443 /* ListaCarrosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FCC3E52294B180002FD443 /* ListaCarrosVC.swift */; };
 		38FCC3E92294B181002FD443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FCC3E72294B181002FD443 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BB90A912297579000A7D915 /* CadastraCarroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastraCarroVC.swift; sourceTree = "<group>"; };
+		0BB90A932297699E00A7D915 /* CarroManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroManager.swift; sourceTree = "<group>"; };
 		38FCC3E02294B180002FD443 /* TableviewCarros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableviewCarros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FCC3E32294B180002FD443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38FCC3E52294B180002FD443 /* ListaCarrosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCarrosVC.swift; sourceTree = "<group>"; };
@@ -43,6 +47,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB90A8C229752FE00A7D915 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38FCC3F92294D0AE002FD443 /* Carro.swift */,
+				0BB90A932297699E00A7D915 /* CarroManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BB90A8D2297532200A7D915 /* ListaDeCarros */ = {
+			isa = PBXGroup;
+			children = (
+				38FCC3E52294B180002FD443 /* ListaCarrosVC.swift */,
+				38FCC3F52294B45F002FD443 /* CarroTableCell.swift */,
+				38FCC3F62294B45F002FD443 /* CarroTableCell.xib */,
+			);
+			path = ListaDeCarros;
+			sourceTree = "<group>";
+		};
+		0BB90A8E2297534200A7D915 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38FCC3EC2294B183002FD443 /* LaunchScreen.storyboard */,
+				38FCC3E32294B180002FD443 /* AppDelegate.swift */,
+				38FCC3EA2294B183002FD443 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BB90A8F2297536800A7D915 /* DetalheCarro */ = {
+			isa = PBXGroup;
+			children = (
+				38FCC3FB2294D706002FD443 /* DetalheVC.swift */,
+			);
+			path = DetalheCarro;
+			sourceTree = "<group>";
+		};
+		0BB90A902297574D00A7D915 /* CadastraCarro */ = {
+			isa = PBXGroup;
+			children = (
+				0BB90A912297579000A7D915 /* CadastraCarroVC.swift */,
+			);
+			path = CadastraCarro;
+			sourceTree = "<group>";
+		};
 		38FCC3D72294B180002FD443 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +111,13 @@
 		38FCC3E22294B180002FD443 /* TableviewCarros */ = {
 			isa = PBXGroup;
 			children = (
-				38FCC3E32294B180002FD443 /* AppDelegate.swift */,
-				38FCC3E52294B180002FD443 /* ListaCarrosVC.swift */,
+				0BB90A902297574D00A7D915 /* CadastraCarro */,
+				0BB90A8C229752FE00A7D915 /* Models */,
+				0BB90A8D2297532200A7D915 /* ListaDeCarros */,
+				0BB90A8F2297536800A7D915 /* DetalheCarro */,
+				0BB90A8E2297534200A7D915 /* Resources */,
 				38FCC3E72294B181002FD443 /* Main.storyboard */,
-				38FCC3FB2294D706002FD443 /* DetalheVC.swift */,
-				38FCC3F52294B45F002FD443 /* CarroTableCell.swift */,
-				38FCC3F62294B45F002FD443 /* CarroTableCell.xib */,
-				38FCC3EA2294B183002FD443 /* Assets.xcassets */,
-				38FCC3EC2294B183002FD443 /* LaunchScreen.storyboard */,
 				38FCC3EF2294B183002FD443 /* Info.plist */,
-				38FCC3F92294D0AE002FD443 /* Carro.swift */,
 			);
 			path = TableviewCarros;
 			sourceTree = "<group>";
@@ -149,6 +195,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				38FCC3FC2294D706002FD443 /* DetalheVC.swift in Sources */,
+				0BB90A942297699E00A7D915 /* CarroManager.swift in Sources */,
+				0BB90A922297579000A7D915 /* CadastraCarroVC.swift in Sources */,
 				38FCC3E62294B180002FD443 /* ListaCarrosVC.swift in Sources */,
 				38FCC3FA2294D0AE002FD443 /* Carro.swift in Sources */,
 				38FCC3F72294B45F002FD443 /* CarroTableCell.swift in Sources */,

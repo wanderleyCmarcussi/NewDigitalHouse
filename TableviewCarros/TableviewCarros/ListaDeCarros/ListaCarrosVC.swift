@@ -13,30 +13,30 @@ class ListaCarrosVC: UIViewController {
     
     @IBOutlet weak var carrosTableView: UITableView!
     
-    var arrayCarros:[Carro] = []
+    var arrayCarros:[Carro] = [CarroManager]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let carro1 = Carro(nome: "Fusca",
-                           nomeImagem: "fusca",
-                           ano: "1980",
-                           km: "00", preco: 45000)
-        
-        let carro2 = Carro(nome: "Palio",
-                           nomeImagem: "palio",
-                           ano: "2000",
-                           km: "2000", preco: 15000)
-        
-        let carro3 = Carro(nome: "Chevette",
-                           nomeImagem: "chevette",
-                           ano: "1980",
-                           km: "5000", preco: 45.000)
-        
-        
-        self.arrayCarros.append(carro1)
-        self.arrayCarros.append(carro2)
-        self.arrayCarros.append(carro3)
+//        let carro1 = Carro(nome: "Fusca",
+//                           nomeImagem: "fusca",
+//                           ano: "1980",
+//                           km: "00", preco: 45000)
+//        
+//        let carro2 = Carro(nome: "Palio",
+//                           nomeImagem: "palio",
+//                           ano: "2000",
+//                           km: "2000", preco: 15000)
+//        
+//        let carro3 = Carro(nome: "Chevette",
+//                           nomeImagem: "chevette",
+//                           ano: "1980",
+//                           km: "5000", preco: 45.000)
+//        
+//        
+//        self.arrayCarros.append(carro1)
+//        self.arrayCarros.append(carro2)
+//        self.arrayCarros.append(carro3)
         
         self.carrosTableView.register(UINib(nibName: "CarroTableCell", bundle: nil),
                                       forCellReuseIdentifier: "CarroTableCell")
@@ -71,7 +71,8 @@ extension ListaCarrosVC: UITableViewDataSource, UITableViewDelegate {
         
         cell.configCell(carro: self.arrayCarros[indexPath.row])
        
-//        cell.configCell(nome: self.arrayCarros[indexPath.row], imagem: "fusca")
+
+        
         return cell
         
     }
