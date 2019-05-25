@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0BEDDC20229889F600564048 /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDDC1F229889F600564048 /* Moto.swift */; };
-		0BEDDC222298933200564048 /* CadastroMotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDDC212298933200564048 /* CadastroMotoViewController.swift */; };
+		0BEDDC222298933200564048 /* CadastraMotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDDC212298933200564048 /* CadastraMotoViewController.swift */; };
 		0BEDDC24229896A000564048 /* MotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDDC23229896A000564048 /* MotoManager.swift */; };
 		131542EB2297577700482F01 /* CadastraCarroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131542EA2297577700482F01 /* CadastraCarroViewController.swift */; };
 		131542EF2297698E00482F01 /* CarroManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131542EE2297698E00482F01 /* CarroManager.swift */; };
+		134293B722996896007D6936 /* Veiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134293B622996896007D6936 /* Veiculo.swift */; };
+		134293B922996DBA007D6936 /* VeiculoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134293B822996DBA007D6936 /* VeiculoManager.swift */; };
 		38FCC3E42294B180002FD443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FCC3E32294B180002FD443 /* AppDelegate.swift */; };
 		38FCC3E62294B180002FD443 /* ListaCarrosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FCC3E52294B180002FD443 /* ListaCarrosVC.swift */; };
 		38FCC3E92294B181002FD443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FCC3E72294B181002FD443 /* Main.storyboard */; };
@@ -25,10 +27,12 @@
 
 /* Begin PBXFileReference section */
 		0BEDDC1F229889F600564048 /* Moto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
-		0BEDDC212298933200564048 /* CadastroMotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroMotoViewController.swift; sourceTree = "<group>"; };
+		0BEDDC212298933200564048 /* CadastraMotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastraMotoViewController.swift; sourceTree = "<group>"; };
 		0BEDDC23229896A000564048 /* MotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoManager.swift; sourceTree = "<group>"; };
 		131542EA2297577700482F01 /* CadastraCarroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastraCarroViewController.swift; sourceTree = "<group>"; };
 		131542EE2297698E00482F01 /* CarroManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroManager.swift; sourceTree = "<group>"; };
+		134293B622996896007D6936 /* Veiculo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Veiculo.swift; sourceTree = "<group>"; };
+		134293B822996DBA007D6936 /* VeiculoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeiculoManager.swift; sourceTree = "<group>"; };
 		38FCC3E02294B180002FD443 /* TableviewCarros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableviewCarros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FCC3E32294B180002FD443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38FCC3E52294B180002FD443 /* ListaCarrosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCarrosVC.swift; sourceTree = "<group>"; };
@@ -56,10 +60,12 @@
 		131542E5229752B800482F01 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				134293B622996896007D6936 /* Veiculo.swift */,
 				38FCC3F92294D0AE002FD443 /* Carro.swift */,
 				0BEDDC1F229889F600564048 /* Moto.swift */,
 				131542EE2297698E00482F01 /* CarroManager.swift */,
 				0BEDDC23229896A000564048 /* MotoManager.swift */,
+				134293B822996DBA007D6936 /* VeiculoManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				131542EA2297577700482F01 /* CadastraCarroViewController.swift */,
-				0BEDDC212298933200564048 /* CadastroMotoViewController.swift */,
+				0BEDDC212298933200564048 /* CadastraMotoViewController.swift */,
 			);
 			path = CadastraCarro;
 			sourceTree = "<group>";
@@ -206,11 +212,13 @@
 				38FCC3FC2294D706002FD443 /* DetalheVC.swift in Sources */,
 				131542EF2297698E00482F01 /* CarroManager.swift in Sources */,
 				0BEDDC24229896A000564048 /* MotoManager.swift in Sources */,
-				0BEDDC222298933200564048 /* CadastroMotoViewController.swift in Sources */,
+				0BEDDC222298933200564048 /* CadastraMotoViewController.swift in Sources */,
 				131542EB2297577700482F01 /* CadastraCarroViewController.swift in Sources */,
 				38FCC3E62294B180002FD443 /* ListaCarrosVC.swift in Sources */,
 				0BEDDC20229889F600564048 /* Moto.swift in Sources */,
 				38FCC3FA2294D0AE002FD443 /* Carro.swift in Sources */,
+				134293B722996896007D6936 /* Veiculo.swift in Sources */,
+				134293B922996DBA007D6936 /* VeiculoManager.swift in Sources */,
 				38FCC3F72294B45F002FD443 /* CarroTableCell.swift in Sources */,
 				38FCC3E42294B180002FD443 /* AppDelegate.swift in Sources */,
 			);

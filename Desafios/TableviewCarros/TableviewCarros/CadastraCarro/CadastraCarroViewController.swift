@@ -39,7 +39,8 @@ class CadastraCarroViewController: UIViewController {
             km: kmTextField.text!,
             preco: Float(precoTextField.text!)!)
         
-        CarroManager.shared.adicionaCarro(carro: carro)
+        //CarroManager.shared.adicionaCarro(carro: carro)
+        VeiculoManager.shared.adicionaVeiculo(veiculo: carro)
         
         self.dismiss(animated: true)
     }

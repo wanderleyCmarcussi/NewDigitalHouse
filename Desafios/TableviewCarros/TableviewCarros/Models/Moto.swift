@@ -8,18 +8,11 @@
 
 import Foundation
 
-class Moto {
-    
-    var modelo: String?
-    var modeloImagem: String?
+class Moto: Veiculo {
     var tipo: String?
-    var preco: Float?
-    
-    init(modelo: String, modeloImagem: String, tipo: String ,preco: Float) {
-        
-        self.modelo = modelo
-        self.modeloImagem = modeloImagem
+
+    init(nome: String, nomeImagem: String, ano: String, km: String, preco: Float, tipo: String) {
+        super.init(nome: nome, nomeImagem: nomeImagem, ano: ano, km: km, preco: preco)
         self.tipo = tipo
-        self.preco = preco
     }
 }

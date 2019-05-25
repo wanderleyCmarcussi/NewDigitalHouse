@@ -30,7 +30,7 @@ class ListaCarrosVC: UIViewController {
     }
     
     func atualizaTabela() {
-        self.arrayCarros = CarroManager.shared.getCarros()
+        self.arrayCarros = VeiculoManager.shared.getCarros()
         self.carrosTableView.reloadData()
     }
 
@@ -77,7 +77,7 @@ extension ListaCarrosVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            CarroManager.shared.deletaCarro(index: indexPath.row)
+            VeiculoManager.shared.deletaCarro(index: indexPath.row)
             self.atualizaTabela()
         }
     }
